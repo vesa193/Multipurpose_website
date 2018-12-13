@@ -1,0 +1,1 @@
+function components(){var e=document.querySelector(".nav__hamb"),n=document.querySelector(".menu");e.addEventListener("click",function(){n.classList.toggle("menu--open")})}components();

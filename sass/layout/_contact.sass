@@ -1,0 +1,130 @@
+@import ../helpers/mixins
+@import ../helpers/vars
+
+.contact
+    width: 100%
+    display: flex
+    justify-content: center
+    background: $contact-bg
+    padding: 80px 15px
+
+    &__cards
+        //width: 80%
+        display: grid
+        //grid-template-columns: repeat(auto-fill, minmax(150px, 254px))
+        grid-gap: 40px 
+        padding: 20px 0
+
+    &__card
+
+        h4
+            margin-bottom: 20px
+        p
+            color: $text-cnt
+
+        span
+            color: $white
+            font-size: .8em
+
+    &__logo
+        margin-bottom: 20px
+
+    &__infos
+        margin-top: 10px
+
+    &__info
+        display: flex
+        align-items: center
+
+        img
+            margin-right: 10px
+
+        &:nth-of-type(1)
+
+            img
+                margin-left: 4px
+                margin-right: 14px
+
+        &:nth-of-type(2)
+            margin: 10px 0
+
+        &:nth-of-type(3)
+            
+            img
+                margin-right: 14px
+
+    &__tweet
+        display: flex
+        align-items: flex-start
+
+        img
+            width: 17px
+            height: 15px
+            margin-right: 10px
+        &__text
+
+            &:nth-of-type(1)
+                margin-bottom: 10px
+
+    &__post
+        display: flex
+        margin-top: 40px
+
+        input
+            background: $footer-bg
+            color: $text-cnt
+            padding: 10px 20px
+            outline: none
+            border: 0
+            border-radius: 5px
+            border-top-right-radius: 0
+            border-bottom-right-radius: 0
+
+        &__button
+            background: $btn-cnt
+            color: white
+            border-radius: 5px
+            font-size: .7em
+            padding: 10px 20px
+            border-top-left-radius: 0
+            border-bottom-left-radius: 0
+
+            &:hover, &:focus
+                background: darken($btn-cnt, 20%)
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

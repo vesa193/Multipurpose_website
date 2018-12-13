@@ -1,0 +1,56 @@
+@import ../helpers/mixins
+@import ../helpers/vars
+
+.footer
+    display: flex
+    justify-content: center
+    background: $footer-bg
+    padding: 20px 15px
+
+    &__wrap
+        width: 80%
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__icons
+        width: 8%
+        display: flex
+        justify-content: space-between
+
+        a
+            width: 27px
+            height: 27px
+            background: $icon-ftr
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 5px
+
+            &:hover, &:focus
+                background: $btn-cnt
+
+            &:nth-of-type(2)
+                padding: 10px
+
+    &__icon
+        
+
+        &--tw
+            width: 17px
+            height: 15px
+
+        &--fb
+            width: 9px
+            height: 17px
+
+        &--in
+            width: 16px
+            height: 15px
+
+
+
+
+    
+
+    

@@ -1,0 +1,47 @@
+@import ../helpers/mixins
+@import ../helpers/vars
+
+.about
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(200px, 711px))
+    padding: 0 0
+
+    &__img 
+        //height: 623px
+        +background('../img/girlAlone.jpg', center, no-repeat)
+        background-size: cover
+
+    &__text
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        background: $orange
+        padding: 100px 0 100px 100px 
+
+        &__wrap
+            width: 65%
+
+        p
+            &:nth-of-type(1)
+                margin: 40px 0
+
+            &:nth-of-type(2)
+                margin-bottom: 80px
+
+        h3, p 
+            color: $white
+
+    &__button
+        width: 100%
+        max-width: 132px
+        padding: 10px 20px
+        background: $orange-btn
+        border: 1px solid #cb8d21
+        border-radius: 2px
+        color: $white
+        font-weight: 300
+        font-size: 0.8em
+
+        &:hover, &:focus
+            background: lighten($orange-btn, 5%)

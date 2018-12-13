@@ -1,0 +1,75 @@
+@import ../helpers/mixins
+@import ../helpers/vars
+
+.header
+    display: flex
+    justify-content: center
+    height: 560px
+    +background('../img/header.jpg', bottom, no-repeat)
+    background-size: cover
+
+    &__wrap 
+        width: 80%
+
+    &__content
+        height: 486px
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1920px))
+
+    &__text
+        width: 100%
+        //padding: 105px 0
+        text-align: center
+
+    &__indicators
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 40px
+
+    &__button
+        background: $blue
+        border-radius: 5px
+        padding: 10px 20px
+        margin-bottom: 40px
+        font-weight: bold
+
+        &:hover, &:focus
+            background: darken($blue, 20%)
+
+
+    h2, h4, a
+        color: $white
+
+    
+        
+
+    
+
+
+
+.nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 40px
+
+.menu
+    //width: 40%
+    display: flex
+    justify-content: space-between
+    color: $white
+    transition: all, .3s, ease-in-out
+
+
+    &__items
+
+    &__link
+        font-size: $link
+
+        &:hover, &:focus
+            color: darken($white, 30%)
+
+
+

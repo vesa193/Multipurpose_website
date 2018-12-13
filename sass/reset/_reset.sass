@@ -1,0 +1,84 @@
+@import ../helpers/mixins
+@import ../helpers/vars
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	line-height: 120%
+	
+
+ul 
+	margin: 0
+	list-style: none
+
+	li 
+		list-style: none
+
+a 	
+	font-family: $base-font
+	text-decoration: none   
+	+transition(all, .3s, ease-in-out)
+
+	&:hover, &:focus
+        text-decoration: none
+
+h1
+	font-family: $base-font
+    font-weight: 700
+h2
+	font-family: $base-font
+	font-size: $h2
+	font-weight: bold
+
+
+h3, h4
+	font-family: $base-font
+	font-weight: 400
+	
+h3
+	font-size: $h3
+	letter-spacing: .05em
+	font-weight: bold	
+	text-transform: uppercase
+	color: $blue
+
+h4
+	font-size: $h4
+	font-family: $base-font
+	font-weight: 400
+	color: $white
+
+h5 
+	font-size: $h5
+	font-family: $second-font
+	font-weight: 400
+
+h6
+	font-family: $base-font
+	font-size: $h6
+	text-transform: uppercase
+	color: #616f73
+p
+	font-family: $base-font
+	font-size: $text
+    font-weight: 400 
+	line-height: 150%
+	color: $text-f
+
+span
+	font-family: $base-font
+
+small
+	color: $blue
+	font-family: $base-font
+	font-size: .7em
+
+input
+	font-family: $base-font
+	font-size: .7em
+
+
+
+header, section
+    padding: 0 15px
